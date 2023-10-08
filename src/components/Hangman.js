@@ -1,18 +1,34 @@
 import React, { Component } from "react";
 import { randomWord } from "./RandomWord";
 
-import image0 from "./images/0.jpg";
-import image1 from "./images/1.jpg";
-import image2 from "./images/2.jpg";
-import image3 from "./images/3.jpg";
-import image4 from "./images/4.jpg";
-import image5 from "./images/5.jpg";
-import image6 from "./images/6.jpg";
+import state1 from "./images/state1.GIF";
+import state2 from "./images/state2.GIF";
+import state3 from "./images/state3.GIF";
+import state4 from "./images/state4.GIF";
+import state5 from "./images/state5.GIF";
+import state6 from "./images/state6.GIF";
+import state7 from "./images/state7.GIF";
+import state8 from "./images/state8.GIF";
+import state9 from "./images/state9.GIF";
+import state10 from "./images/state10.GIF";
+import state11 from "./images/state11.GIF";
 
 class Hangman extends Component {
   static defaultProps = {
-    maxWrong: 6,
-    images: [image0, image1, image2, image3, image4, image5, image5, image6],
+    maxWrong: 11,
+    images: [
+      state1,
+      state2,
+      state3,
+      state4,
+      state5,
+      state6,
+      state7,
+      state8,
+      state9,
+      state10,
+      state11,
+    ],
   };
 
   constructor(props) {
@@ -46,6 +62,8 @@ class Hangman extends Component {
       noOfWrong: st.noOfWrong + (st.answer.includes(letter) ? 0 : 1),
     }));
   }
+
+  help() {}
   generateKeypad() {
     return "abcdefghijklmnopqrstuvwxyz".split("").map((letter) => (
       <button
