@@ -1,4 +1,5 @@
 .App {
+  background-color: #eaece5;
     text-align: center;
     height: 100vh;
     display: flex;
@@ -6,6 +7,7 @@
     justify-content: center;
     background-position: center center;
   }
+  /*hangman*/
 
   .Hangman {
     width: 400px;
@@ -31,6 +33,8 @@
     margin: 0.4em -1em 0.2em 0;
     font-size: 2rem;
   }
+
+  /*buttons*/
   
   .Hangman-btns {
     text-align: center;
@@ -62,14 +66,37 @@
     color: #eeeeee;
     box-shadow: 0 6px #9e9e9e;
   }
+
+ 
   #reset {
     width: auto;
     display: block;
+    margin-bottom: 20px;
+    padding: 5px;
     margin-left: auto;
     margin-right: auto;
-    background: #9c27b0;
-    box-shadow: 0 6px #7b1fa2;
+    background: #b2c2bf;
+    
   }
   #reset:hover {
-    background: #7b1fa2;
+    background: #758d89;
   }
+
+
+
+  /*help*/
+
+  #help-btn{
+    background-color: #b2c2bf;
+    padding: 5px;
+  }
+
+  #help-btn:hover{
+    background: #758d89;
+  }
+
+.help{
+  margin: 50px;
+  padding: 20px;
+  background-color: #b2c2bf;
+}

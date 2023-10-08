@@ -9,6 +9,7 @@ let randomFilm = [
   "zoolander",
 ];
 
+//generates word from list at random
 function randomWord() {
   return randomFilm[Math.floor(Math.random() * randomFilm.length)];
 }
